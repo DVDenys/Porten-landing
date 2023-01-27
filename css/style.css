@@ -1008,6 +1008,10 @@ SCROLL
 }
 
 @media screen and (max-width: 450px) {
+  .collection__item {
+    padding: 30px 10px;
+  }
+
   .collection__text-block {
     padding: 20px 10px;
   }
