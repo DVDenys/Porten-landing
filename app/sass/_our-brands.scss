@@ -20,3 +20,22 @@
     &__img {
     }
 }
+
+@media screen and (max-width: 1280px) {
+    .our-brands__container{
+        max-width: 900px;
+    }
+    .our-brands__img {
+        max-width: 200px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .our-brands__box {
+        margin: $spacing-small;
+    }
+    .our-brands__container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

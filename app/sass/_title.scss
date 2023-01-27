@@ -14,3 +14,9 @@
         left: calc(50% - 60px);
     }
 }
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: $font-size-footer-title;
+    }
+}
