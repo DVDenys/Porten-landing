@@ -1,0 +1,16 @@
+.title {
+    font-size: $font-size-title;
+    line-height: 42px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    &::before {
+        content: '';
+        width: 120px;
+        height: 1px;
+        background-color: white;
+        position: absolute;
+        top: 70px;
+        left: calc(50% - 60px);
+    }
+}

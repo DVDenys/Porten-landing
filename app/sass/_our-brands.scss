@@ -1,0 +1,22 @@
+.our-brands {
+    background-color: $color-dark-gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__title {
+        margin: 60px 0 80px 0;
+    }
+    &__container {
+        max-width: 1110px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    &__box {
+    }
+    &__img {
+    }
+}

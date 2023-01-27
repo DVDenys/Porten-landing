@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    &__container {
+        max-width: 1110px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item:last-child {
+        background-color: $color-dark-gray;
+    }
+    &__item:first-child {
+        min-height: 40px;
+    }
+    &__navigation {
+
+    }
+    &__list {
+        margin: 0 -20px 0 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    &__list-item {
+        list-style-type: none;
+        height: 100%;
+        a {
+            padding: $spacing-large $spacing-medium;
+            display: flex;
+            text-transform: uppercase;
+            color: $color-gray;
+            transition-duration: $transition;
+        }
+        img {
+            width: 19px;
+            height: 19px;
+            object-fit: cover;
+            object-position: center center;
+        }
+        .basked-icon {
+            margin-left: $spacing-large;
+        }
+        :hover {
+            background-color: $color-dark-gray-hover;
+            color: $color-white;
+        }
+    }
+}
+
+.first-item {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-ultra-small;
+    color: $color-gray;
+    p {
+        margin: 0;
+    }
+    a {
+        color: inherit;
+    }
+    &__phone-text {
+        display: flex;
+        align-items: center;
+        padding-right: $spacing-small;
+        img {
+            width: 16px;
+            height: 16px;
+            object-fit: cover;
+            object-position: center center;
+            margin-right: $spacing-small;
+        }
+    }
+    &__text {
+        padding: 0 $spacing-small;
+        border-right: 1px solid $color-gray;
+        border-left: 1px solid $color-gray;
+    }
+    &__work-watch {
+        padding-left: $spacing-small;
+    }
+    &__log-in {
+        display: flex;
+        margin-right: $spacing-ultra-small;
+        img {
+            width: 16px;
+            height: 16px;
+            object-fit: cover;
+            object-position: center center;
+            margin-right: $spacing-small;
+        }
+    }
+    
+    &__sing-up {
+        margin-left: $spacing-ultra-small;
+    }
+}
+.second-item {
+    max-width: 1110px;
+    &__logo {
+    }
+}
