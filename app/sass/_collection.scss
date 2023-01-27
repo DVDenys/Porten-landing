@@ -69,6 +69,9 @@
 }
 
 @media screen and (max-width: 450px) {
+    .collection__item {
+        padding: $spacing-large $spacing-small;
+    }
     .collection__text-block {
         padding: $spacing-medium $spacing-small;
     }
