@@ -7,7 +7,7 @@
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
     }
     &__item {
         display: flex;
@@ -63,18 +63,28 @@
     a {
         color: inherit;
     }
+    
     &__phone-text {
         display: flex;
         align-items: center;
         padding-right: $spacing-small;
-        img {
+        transition: $transition;
+        svg {
             width: 16px;
             height: 16px;
             object-fit: cover;
             object-position: center center;
             margin-right: $spacing-small;
+            fill: $color-gray;
+            transition: $transition;
         }
     }
+    &__phone-text:hover{
+        color: $color-white;
+        svg{
+            fill: $color-white;
+        }
+        }
     &__text {
         padding: 0 $spacing-small;
         border-right: 1px solid $color-gray;
@@ -86,21 +96,43 @@
     &__log-in {
         display: flex;
         margin-right: $spacing-ultra-small;
-        img {
+        transition: $transition;
+        svg {
             width: 16px;
             height: 16px;
+            fill: $color-gray;;
             object-fit: cover;
             object-position: center center;
             margin-right: $spacing-small;
+            transition: $transition;
+        }
+    }
+    &__log-in:hover {
+        color: $color-white;
+        svg{
+            fill: $color-white;
         }
     }
     
     &__sing-up {
         margin-left: $spacing-ultra-small;
+        transition: $transition;
+    }
+    &__sing-up:hover {
+        color: $color-white;
     }
 }
 .second-item {
     max-width: 1110px;
+    a[aria-label="home page"] {
+        display: flex;
+        height: 100%;
+        transition: $transition;
+    }
+    a[aria-label="home page"]:hover {
+        background-color: $color-dark-gray-hover;
+        color: $color-white;
+    }
 }
 .header__navigation-burger-menu {
     display: none;
@@ -133,6 +165,7 @@
 
 .header__list-mobile.active {
     transform: translateX(-100%);
+    overflow: auto;
 }
 
 @media screen and (max-width: 1280px) {

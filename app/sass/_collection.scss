@@ -50,14 +50,11 @@
     .collection {
         &__text-block {
             min-width: auto;
+            background-size: cover;
+            max-width: 900px;
         }
     }
-}
 
-@media screen and (max-width: 768px) {
-    .collection__text-block {
-        background-size: cover;
-    }
 }
 
 @media screen and (max-width: 590px) {

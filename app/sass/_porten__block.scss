@@ -20,6 +20,7 @@
         min-width: 320px;
         min-height: 320px;
         border: 4px solid $color-white;
+        transition: $transition;
         img {
             min-width: 185px;
             padding-bottom: $spacing-small;
@@ -32,6 +33,9 @@
             text-transform: uppercase;
             text-align: center;
         }
+    }
+    &-img:hover {
+        background-color: $color-black-opacity;
     }
     &-text {
         max-width: 730px;

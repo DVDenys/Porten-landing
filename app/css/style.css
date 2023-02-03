@@ -64,9 +64,9 @@ h2 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch; }
   .header__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -135,15 +135,24 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-right: 10px; }
-    .first-item__phone-text img {
+    padding-right: 10px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+    .first-item__phone-text svg {
       width: 16px;
       height: 16px;
       -o-object-fit: cover;
          object-fit: cover;
       -o-object-position: center center;
          object-position: center center;
-      margin-right: 10px; }
+      margin-right: 10px;
+      fill: #969696;
+      -webkit-transition: 0.4s;
+      transition: 0.4s; }
+  .first-item__phone-text:hover {
+    color: white; }
+    .first-item__phone-text:hover svg {
+      fill: white; }
   .first-item__text {
     padding: 0 10px;
     border-right: 1px solid #969696;
@@ -154,20 +163,43 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 5px; }
-    .first-item__log-in img {
+    margin-right: 5px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+    .first-item__log-in svg {
       width: 16px;
       height: 16px;
+      fill: #969696;
       -o-object-fit: cover;
          object-fit: cover;
       -o-object-position: center center;
          object-position: center center;
-      margin-right: 10px; }
+      margin-right: 10px;
+      -webkit-transition: 0.4s;
+      transition: 0.4s; }
+  .first-item__log-in:hover {
+    color: white; }
+    .first-item__log-in:hover svg {
+      fill: white; }
   .first-item__sing-up {
-    margin-left: 5px; }
+    margin-left: 5px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+  .first-item__sing-up:hover {
+    color: white; }
 
 .second-item {
   max-width: 1110px; }
+  .second-item a[aria-label="home page"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
+  .second-item a[aria-label="home page"]:hover {
+    background-color: #1f1f1f;
+    color: white; }
 
 .header__navigation-burger-menu {
   display: none; }
@@ -209,7 +241,8 @@ h2 {
 
 .header__list-mobile.active {
   -webkit-transform: translateX(-100%);
-          transform: translateX(-100%); }
+          transform: translateX(-100%);
+  overflow: auto; }
 
 @media screen and (max-width: 1280px) {
   .header__container {
@@ -276,7 +309,9 @@ h2 {
             flex-direction: column;
     min-width: 320px;
     min-height: 320px;
-    border: 4px solid white; }
+    border: 4px solid white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s; }
     .porten__block-img img {
       min-width: 185px;
       padding-bottom: 10px;
@@ -287,6 +322,8 @@ h2 {
       line-height: 28px;
       text-transform: uppercase;
       text-align: center; }
+  .porten__block-img:hover {
+    background-color: rgba(0, 0, 0, 0.3); }
   .porten__block-text {
     max-width: 730px;
     margin-top: 80px;
@@ -377,7 +414,7 @@ h2 {
   background-position: center left;
   background-repeat: no-repeat;
   background-size: cover;
-  min-width: 880px; }
+  min-width: 900px; }
   .collection__item-button {
     margin-top: 80px; }
 
@@ -389,9 +426,7 @@ h2 {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-  .collection__item {
-    min-width: 900px; } }
+            align-items: center; } }
 
 @media screen and (max-width: 991px) {
   .season__block-card {
@@ -400,7 +435,9 @@ h2 {
         -ms-flex-direction: column;
             flex-direction: column; }
   .collection__item {
-    min-width: 100%; } }
+    max-width: 900px;
+    width: 100%;
+    min-width: auto; } }
 
 @media screen and (max-width: 480px) {
   .season__item {
@@ -548,11 +585,9 @@ h2 {
 
 @media screen and (max-width: 991px) {
   .collection__text-block {
-    min-width: auto; } }
-
-@media screen and (max-width: 768px) {
-  .collection__text-block {
-    background-size: cover; } }
+    min-width: auto;
+    background-size: cover;
+    max-width: 900px; } }
 
 @media screen and (max-width: 590px) {
   .collection__text-block-button {
