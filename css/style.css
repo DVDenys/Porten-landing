@@ -454,6 +454,9 @@ h2 {
   position: relative;
   display: inline-block;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .title::before {
@@ -464,6 +467,8 @@ h2 {
   position: absolute;
   top: 70px;
   left: calc(50% - 60px);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 .product__card {
