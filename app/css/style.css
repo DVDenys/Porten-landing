@@ -448,7 +448,10 @@ h2 {
   line-height: 42px;
   position: relative;
   display: inline-block;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); }
   .title::before {
     content: '';
     width: 120px;
@@ -456,7 +459,9 @@ h2 {
     background-color: white;
     position: absolute;
     top: 70px;
-    left: calc(50% - 60px); }
+    left: calc(50% - 60px);
+    -webkit-box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3); }
 
 @media screen and (max-width: 480px) {
   .title {
